@@ -1,0 +1,15 @@
+.header {
+  background: linear-gradient(90.95deg, #255D8B 2.29%, #3A80BA 96.79%);
+  display: flex;
+  color: white;
+  font-size: 40px;
+  font-weight: 200;
+
+  &__simpleLogo {
+    margin: 24px 0;
+  }
+
+  &__logo {
+    margin: 24px 0 0 0;
+  }
+}

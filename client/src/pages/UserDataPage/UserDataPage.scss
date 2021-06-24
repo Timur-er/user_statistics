@@ -1,0 +1,115 @@
+.userData {
+
+  &__header{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+    align-items: center;
+  }
+
+
+  &__dateRangeWrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 40px;
+    column-gap: 15px;
+  }
+
+  &__dateRange {
+    display: flex;
+    align-items: center;
+    border: 1px solid #F1F1F1;
+    border-radius: 5px;
+    padding: 5px;
+    column-gap: 10px;
+  }
+
+  &__calendarImage {
+    background-color: #3A80BA;
+    width: 28px;
+    height: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+  }
+
+  &__calendarWrapper {
+    display: none;
+  }
+
+  &__calendarsWrapperActive {
+    position: absolute;
+    display: flex;
+    column-gap: 15px;
+    border: 1px solid #F1F1F1;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+    right: 130px;
+    top: 245px;
+    flex-direction: column;
+    background-color: white;
+    z-index: 1;
+
+    &::before {
+      content: '';
+      position: absolute;
+      width: 10px;
+      height: 10px;
+      background-color: white;
+      border-left: 1px solid #F1F1F1;
+      border-top: 1px solid #F1F1F1;
+      top: -6px;
+      right: 215px;
+      transform: rotate(45deg);
+    }
+  }
+
+  &__calendars {
+    display: flex;
+    grid-column-gap: 15px;
+  }
+
+  &__CalendarsWrapper {
+    display: none;
+  }
+
+
+  &__calendarsButtons {
+    margin-top: 15px;
+    width: 48%;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    right: 450px;
+    top: 400px;
+    font-size: 14px;
+  }
+
+  &__calendarApplyBtn {
+    background-color: #3A80BA;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    padding: 7px 30px;
+    cursor: pointer;
+  }
+
+  &__calendarCancelBtn {
+    background-color: transparent;
+    border: none;
+    text-decoration: underline;
+    font-weight: 500;
+    cursor: pointer;
+  }
+
+  &__clicksGraph {
+    width: 100%;
+  }
+
+}

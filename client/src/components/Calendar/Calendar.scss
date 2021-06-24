@@ -1,0 +1,106 @@
+.calendar {
+
+  font-size: 12px;
+
+  &__select {
+    background: url("../../svg/selectArrow.svg") no-repeat 97%;
+    appearance: none;
+    overflow: hidden;
+    height: 28px;
+    width: 100px;
+    border-radius: 5px;
+    border-color: #F1F1F1;
+    padding: 0 10px;
+  }
+
+  &__selectBar {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 4px;
+  }
+
+  &__header {
+    display: grid;
+    grid-template-columns: 30px 30px 30px 30px 30px 30px 30px ;
+    background-color: #3A80BA;
+    border-radius: 5px;
+    color: white;
+    font-weight: 200;
+    text-align: center;
+    height: 20px;
+    align-items: center;
+  }
+
+  &__days {
+    display: grid;
+    grid-template-columns: 30px 30px 30px 30px 30px 30px 30px ;
+    grid-template-rows: 20px 20px 20px 20px 20px ;
+    margin-top: 2px;
+    row-gap: 2px;
+  }
+
+  &__dayRow {
+
+    border-top: 1px solid #F1F1F1;
+    border-bottom: 1px solid #F1F1F1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &:hover {
+      background-color: #F1F1F1;
+    }
+
+    &:nth-child(7n+1){
+      border: 1px solid #F1F1F1;
+      border-right: 0;
+      border-top-left-radius: 5px;
+      border-bottom-left-radius: 5px;
+    }
+
+    &:nth-child(7n) {
+      border: 1px solid #F1F1F1;
+      border-left: 0;
+      border-top-right-radius: 5px;
+      border-bottom-right-radius: 5px;
+
+    }
+  }
+
+  &__tableHeaderDay {
+    background-color: #3A80BA;
+    color: white;
+    font-size: 10px;
+    font-weight: 200;
+    padding: 5px;
+
+    &:first-child {
+      border-radius: 5px 0 0 5px;
+    }
+    &:last-child {
+      border-radius: 0 5px 5px 0;
+    }
+  }
+
+  &__tableBody {
+    border-radius: 5px;
+    border: 1px solid red;
+  }
+
+  &__tablesDayRows {
+
+    border-collapse: collapse;
+    border: 1px solid black;
+    border-radius: 5px;
+
+  }
+
+  &__tableDay {
+    font-size: 12px;
+
+  }
+
+  &__todayDay {
+    background-color: #3A80BA;
+  }
+
+}

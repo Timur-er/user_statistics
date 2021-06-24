@@ -1,0 +1,41 @@
+.pagination {
+  margin-top: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &__button {
+    width: 48px;
+    height: 48px;
+    background-color: inherit;
+    border: 2px solid #F1F1F1;
+    box-sizing: border-box;
+    border-radius: 8px;
+    transition: 0.3s ease all;
+    margin: 8px;
+
+    &:hover {
+      background-color: #3A80BA;
+      border-color: #3A80BA;
+      color: white;
+    }
+  }
+
+  &__buttonActive{
+    background-color: #3A80BA;
+    border-color: #3A80BA;
+    color: white;
+
+  }
+
+  &__buttons {
+    margin: 0 25px;
+  }
+
+  &__arrows {
+    display: flex;
+    align-items: center;
+    border: none;
+    background-color: inherit;
+  }
+
+}

@@ -1,0 +1,63 @@
+.main {
+  top: 0;
+  background: url("../../svg/MainBackground.svg") no-repeat;
+  background-size: 100%;
+  color: white;
+  font-family: Montserrat, sans-serif;
+
+  &__wrapper {
+    top: 0;
+    margin: 0;
+    padding: 25px 0 200px 0;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__logo {
+    font-size: 40px;
+  }
+
+  &__slogan {
+    font-size: 48px;
+    line-height: 59px;
+  }
+
+  &__description {
+    font-size: 20px;
+    line-height: 142%;
+  }
+
+  &__statsBtn {
+    color: #3A80BA;
+    padding: 20px 40px;
+    border: none;
+    border-radius: 8px;
+    margin-top: 30px;
+  }
+
+  &__phone {
+    content: url("../../svg/phone.svg");
+    padding-top: 100px;
+  }
+
+  &__aboutSection {
+    color: #000;
+    text-align: center;
+    font-size: 32px;
+  }
+
+  &__aboutTitle {
+    font-weight: 400;
+  }
+
+  &__aboutDescription {
+    font-size: 20px;
+    color: #7E7E7E;
+  }
+
+  &__cardLinks {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+  }
+}

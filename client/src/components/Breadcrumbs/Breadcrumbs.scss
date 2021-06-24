@@ -1,0 +1,25 @@
+.breadcrumbs {
+
+  &__wrapper {
+    display: flex;
+    column-gap: 20px;
+    margin-top: 15px;
+  }
+
+  &__link {
+    text-decoration: none;
+    color: #CCCCCC;
+
+    &:after {
+      content: url("../../svg/arrow.svg");
+      position: absolute;
+      margin-left: 5px;
+    }
+  }
+
+  &__activePage {
+    color: #3A80BA;
+    text-decoration: none;
+  }
+
+}

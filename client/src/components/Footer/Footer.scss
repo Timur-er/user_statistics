@@ -1,0 +1,31 @@
+.footer {
+
+  margin-top:160px;
+  font-family: Montserrat, SansSerif;
+  color: #F1F1F1;
+  &__main{
+    background: url("../../svg/FooterBackground.svg") no-repeat;
+    background-size: 100%;
+  }
+
+  &__simple {
+    background-color: #1C3B55;
+  }
+
+  &__mainBody {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 15vh;
+  }
+
+  &__body {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__logo {
+    font-size: 24px;
+  }
+}
